@@ -1,0 +1,129 @@
+.project-header img {
+  height: 40px;        /* même taille pour tous les logos */
+  margin-right: 10px;  /* espace entre logo et titre */
+  object-fit: contain;
+}
+
+.project-card h2 {
+  font-size: 1.2rem;
+  color: #003366;       /* bleu Aubay */
+  margin: 0;
+}
+/* --- Reset de base --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background: #f9f9fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* --- HEADER --- */
+header {
+  background: linear-gradient(135deg, #ff6f3c, #ff9a3c);
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+header h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* --- NAVIGATION --- */
+nav {
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.8rem;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ff6f3c;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ff3c6f;
+}
+
+/* --- SECTIONS --- */
+section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h3 {
+  font-size: 1.8rem;
+  color: #ff6f3c;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+section h3::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ff6f3c;
+  margin-top: 0.5rem;
+}
+
+section ul {
+  list-style: none;
+}
+
+section ul li {
+  margin-bottom: 0.7rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+section ul li::before {
+  content: "✔";
+  color: #ff6f3c;
+  position: absolute;
+  left: 0;
+}
+
+/* --- ARTICLES --- */
+article {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-left: 4px solid #ff6f3c;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);

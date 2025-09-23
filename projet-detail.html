@@ -1,0 +1,96 @@
+<!-- projet-detail.html -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Projet ChatGy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Projets</a>
+       <a href="projet-detail.html">Projet ChatGy</a>
+      <a href="contact.html">Contact</a>
+      
+    </nav>
+  </header>
+
+  
+
+  <main>
+    <section class="project-header" style="background-color:#003366; color:white; padding:2rem;">
+      <h1>ChatGy - Chatbot IA intégré</h1>
+      <p>Développement IA intégré aux Power Apps et workflows automatisés</p>
+    </section>
+
+    <section class="project-details" style="padding:2rem;">
+      <h2>Détails du projet</h2>
+      <ul>
+        <li>Type : Freelance</li>
+        <li>Technologies : ChatGy, Power Apps, Power BI, Make</li>
+        <li>Rôle : Développement IA, intégration, UX/UI Design</li>
+        <li>Résultat : Automatisation des process et assistance utilisateur</li>
+      </ul>
+      <h3>Captures & Démo</h3>
+      <img src="assets/chatgy-dashboard.png" alt="Dashboard ChatGy" style="max-width:100%;">
+    </section>
+    <section class="project-details" style="padding:2rem;">
+    <div class="project-card" data-type="chatgy">
+  <div class="project-header" style="display:flex; align-items:center;">
+    <img src="assets/logos/chatgy.png" alt="ChatGy Logo" style="height:40px; margin-right:10px;">
+    <h2>ChatGy - Chatbot IA intégré</h2>
+  </div>
+  <p>Développement IA intégré aux Power Apps et workflows automatisés</p>
+  <ul>
+    <li>Technologies : ChatGy, Power Apps, Power BI, Make</li>
+    <li>Rôle : Développement IA, intégration, UX/UI Design</li>
+    <li>Résultat : Automatisation des process et assistance utilisateur</li>
+  </ul>
+  <a href="formulaire-projet.html" class="cta-button">Proposer un projet similaire</a>
+</div>
+    </section>
+  </main>
+
+  <button onclick="filterProjects('freelance')">Freelance</button>
+<button onclick="filterProjects('entreprise')">Entreprise</button>
+<button onclick="filterProjects('chatgy')">ChatGy</button>
+<button onclick="filterProjects('nocode')">No-code</button>
+
+<div class="project-card" data-type="chatgy">Projet ChatGy</div>
+<div class="project-card" data-type="nocode">Projet Airtable</div>
+
+  <!-- Exemple d'un projet dans projets.html -->
+<div class="project-card" data-type="entreprise">
+  <div class="project-header" style="display:flex; align-items:center;">
+    <img src="assets/publicis-groupe-logo-groupe-2020-annual-financial-report.png" alt="Publicis Logo" style="height:40px; margin-right:10px;">
+    <h2>Publicis – Consultante Power Platform (2022–2023)</h2>
+  </div>
+  <ul>
+    <li>Dashboards Power BI pour suivi de performance marketing</li>
+    <li>Automatisation des workflows avec Power Automate et Logic Apps</li>
+    <li>Développement Power Apps et collaboration avec équipes métiers</li>
+  </ul>
+</div>
+
+<div class="project-card" data-type="freelance">
+  <div class="project-header" style="display:flex; align-items:center;">
+    <img src="assets/LOGOMariamSanoko.jpg" alt="MS Prods Logo" style="height:40px; margin-right:10px;">
+    <h2>MS Prods – Freelance (2023–Aujourd’hui)</h2>
+  </div>
+  <ul>
+    <li>Power Apps, Power BI, Power Automate, Power Pages</li>
+    <li>ChatGy IA et projets no-code / low-code (Airtable, Tally, Make)</li>
+    <li>Prototypage UX/UI : Figma, Adobe XD</li>
+  </ul>
+</div>
+  <footer style="background-color:#F5F5F5; padding:1rem; text-align:center;">
+    © 2025 Mariam Sanoko - msprods.fr
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+
+</html>
